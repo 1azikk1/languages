@@ -1,0 +1,177 @@
+/* Navbar umumiy uslubi */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar linklari */
+.navbar .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #198754;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar link hover */
+.navbar .nav-link:hover {
+  background-color: #198754;
+  color: #fff !important;
+  border-radius: 5px;
+}
+
+/* Navbar aktiv sahifa */
+.navbar .nav-link.active {
+  font-weight: 700;
+  color: #198754;
+}
+
+/* Navbar linklari orasidagi masofa */
+.navbar .nav-item {
+  margin-right: 150px;
+}
+
+/* Oxirgi link uchun masofani olib tashlash */
+.navbar .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Navbar toggle tugmasi */
+.navbar-toggler {
+  border: none;
+  font-size: 20px;
+  color: #333;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Mobil ekranda navbar ochilganda */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Accordion Styles */
+/* Umumiy body va fon stilizatsiyasi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Accordion component */
+.accordion {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+/* Accordion item */
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion header */
+.accordion-header {
+    background-color: #2E8954;
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion-button {
+    color: white;
+    background-color: #2E8954;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.accordion-button:hover {
+    background-color: #2E8954;
+}
+
+/* Accordion body */
+.accordion-body {
+    background-color: #f9f9f9;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Styling for text content */
+h2, h3, h4 {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Specific text styles */
+.accordion-body p {
+    font-size: 15px;
+    color: #555;
+}
+
+.accordion-body ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.accordion-body ul li {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Accordion button when expanded */
+.accordion-button:not(.collapsed) {
+    background-color: #2E8954;
+    color: white;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+/* Responsiveness: For mobile devices */
+@media (max-width: 767px) {
+    .accordion {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .accordion-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .accordion-body {
+        font-size: 13px;
+        padding: 12px;
+    }
+}

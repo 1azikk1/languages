@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load i18n %}
+    <meta charset="UTF-8">
+    <title>Homework</title>
+
+    {% include 'components/_links.html' %}
+
+</head>
+<body>
+
+    {% include 'components/_navbar.html' %}
+
+    <div class="accordion" id="accordionExample">
+            {% for post in posts %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading{{ forloop.counter }}">
+          <button
+            data-mdb-collapse-init
+            class="accordion-button"
+            type="button"
+            data-mdb-target="#collapse{{ forloop.counter }}"
+            aria-expanded="true"
+            aria-controls="collapse{{ forloop.counter }}"
+          >
+              {{ post.title }}
+          </button>
+        </h2>
+        <div id="collapse{{ forloop.counter }}" class="accordion-collapse collapse" aria-labelledby="heading{{ forloop.counter }}" data-mdb-parent="#accordionExample">
+          <div class="accordion-body">{{ post.text }}</div>
+        </div>
+      </div>
+            {% endfor %}
+    </div>
+
+    {% include 'components/_scripts.html' %}
+</body>
+</html>
